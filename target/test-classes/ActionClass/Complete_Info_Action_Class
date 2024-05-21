@@ -1,0 +1,78 @@
+Action Class in Selenium
+
+Action Class in Selenium is a built-in feature provided by the selenium for 
+handling keyboard and mouse events. It includes various operations such as multiple 
+events clicking by control key, drag and drop events and many more. These operations from 
+the action class are performed using the advanced user interaction API in Selenium Webdriver.
+
+
+Different Methods available in Action class
+
+1.clickAndHold()----Clicks (without releasing) at the current mouse location.
+
+
+2.contextClick()----Performs a context-click at the current mouse location. (Right Click Mouse Action)
+
+3.doubleClick()-----Performs a double-click at the current mouse location.
+
+4.dragAndDrop(source, target)----
+
+Performs click-and-hold at the location of the source element, 
+moves to the location of the target element, then releases the mouse.
+Parameters:
+
+source- element to emulate button down at.
+
+target- element to move to and release the mouse at.
+
+
+5.dragAndDropBy(source, x-offset, y-offset)----
+
+Performs click-and-hold at the location of the source element, moves by a given offset, then releases the mouse.
+Parameters:
+
+source- element to emulate button down at.
+
+xOffset- horizontal move offset.
+
+yOffset- vertical move offset.
+
+
+
+6.keyDown(modifier_key)----
+
+Performs a modifier key press. Does not release the modifier key – subsequent interactions may assume it’s kept pressed.
+Parameters:
+
+modifier_key – any of the modifier keys (Keys.ALT, Keys.SHIFT, or Keys.CONTROL)
+
+keyUp(modifier _key)----
+
+Performs a key release.
+Parameters:
+
+modifier_key – any of the modifier keys (Keys.ALT, Keys.SHIFT, or Keys.CONTROL)
+
+7.moveToElement(toElement)----
+
+Moves the mouse to the middle of the element.
+Parameters:
+
+toElement- element to move to.
+
+8.release()--------
+Releases the depressed left mouse button at the current mouse location
+
+9.sendKeys(onElement, charsequence)------
+Sends a series of keystrokes onto the element.
+Parameters:
+
+onElement – element that will receive the keystrokes, usually a text field
+
+charsequence – any string value representing the sequence of keystrokes to be sent
+
+
+
+
+
+
